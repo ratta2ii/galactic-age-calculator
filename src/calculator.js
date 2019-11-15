@@ -1,5 +1,7 @@
 // Business Logic (export items in this file. Import jQuery here if needed)
 
+const earthLifeExpectancy = 78.69;
+
 
 export class Age {
   constructor(age){
@@ -21,5 +23,14 @@ export class Age {
     let jupiterAge = this.age * 11.86;
     return parseFloat(jupiterAge.toFixed(2));
   }
-
+  mercurylifeExpectancy() {
+    const lifeExpectancy = 78.69;
+    let mercuryAge = this.calculateMercury();
+    if (mercuryAge < lifeExpectancy){
+      return `You can expect to live ${(80 - mercuryAge).toFixed(2)} more years.`
+    }
+    if (mercuryAge > lifeExpectancy){
+      return `You have lived ${(mercuryAge - 80).toFixed(2)} years longer than average.`;
+    }
+  }
 }
