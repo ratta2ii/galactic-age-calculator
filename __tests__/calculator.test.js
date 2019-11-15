@@ -57,16 +57,22 @@ describe('Age', () => {
 
 
 
-  test('should determine the calculateLifeExpectancy method correctly calculates the life expectancy on a planet by calling on another method within the class to recieve the current age', () => {
+  test('should determine the mercuryLifeExpectancy method correctly calculates the life expectancy on a planet by calling on another method within the class to recieve the current age', () => {
     let newAge = new Age(10);
-    expect(newAge.calculateLifeExpectancy(newAge.calculateMercury()).toEqual("If all goes well, you can expect to live another 76.29 years.");
+    expect(newAge.mercurylifeExpectancy()).toEqual("You can expect to live 77.60 more years.");
+  });
+
+  test('should determine the mercuryLifeExpectancy method correctly calculates the life expectancy on a planet by calling on another method within the class to recieve the current age', () => {
+    let newAge = new Age(500);
+    expect(newAge.mercurylifeExpectancy()).toEqual("You have lived 40.00 years longer than average.");
   });
 
 
-  // test('should determine the calculateLifeExpectancy method correctly calculates the life expectancy on a planet by calling on another method within the class to recieve the current age', () => {
-  //   let newAge = new Age(55);
-  //   expect(newAge.calculateLifeExpectancy(newAge.calculateMars()).toEqual("You have lived 24.71 years above average.");
-  // });
+
+    test('should determine the mercuryExpectancy method correctly calculates the life expectancy on a planet by calling on another method within the class to recieve the current age', () => {
+      let newAge = new Age(500);
+      expect(newAge.mercurylifeExpectancy()).toEqual("You have lived 40.00 years longer than average.");
+    });
 
 
 });
