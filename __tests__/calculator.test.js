@@ -44,4 +44,16 @@ describe('Age', () => {
   });
 
 
+
+  test('should determine the method correctly calculates, then returns, the correct output (age) of someone living on Jupiter', () => {
+    let newAge = new Age(100);
+    expect(newAge.calculateJupiter()).toEqual(1186);
+  });
+
+  test('should determine the method correctly calculates, then returns, the correct output (age) of someone living on Jupiter', () => {
+    let newAge = new Age(99);
+    expect(newAge.calculateJupiter()).toEqual(1174.14);
+  });
+
+
 });
