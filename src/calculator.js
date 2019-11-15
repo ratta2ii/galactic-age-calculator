@@ -17,5 +17,9 @@ export class Age {
     let marsAge = this.age * 1.88;
     return parseFloat(marsAge.toFixed(2));
   }
+  calculateJupiter() {
+    let jupiterAge = this.age * 11.86;
+    return parseFloat(jupiterAge.toFixed(2));
+  }
 
 }
