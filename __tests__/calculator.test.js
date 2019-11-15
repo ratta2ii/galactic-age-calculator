@@ -9,17 +9,27 @@ describe('Age', () => {
   });
 
 
-
-  test('should correctly detrmine that the method correctly calculates the age of someone living on mercury', () => {
+  test('should determine the method correctly calculates, then returns, the correct output (age) of someone living on Mercury', () => {
     let newAge = new Age(100);
     expect(newAge.calculateMercury()).toEqual(24);
   });
 
-  test('should correctly detrmine that the method correctly calculates the age of someone living on mercury', () => {
+  test('should determine the method correctly calculates, then returns, the correct output (age) of someone living on Mercury', () => {
     let newAge = new Age(113);
     expect(newAge.calculateMercury()).toEqual(27.12);
   });
 
-  
+
+  test('should determine the method correctly calculates, then returns, the correct output (age) of someone living on Venus', () => {
+    let newAge = new Age(100);
+    expect(newAge.calculateMercury()).toEqual(62);
+  });
+
+  test('should determine the method correctly calculates, then returns, the correct output (age) of someone living on Venus', () => {
+    let newAge = new Age(91);
+    expect(newAge.calculateMercury()).toEqual(56.42);
+  });
+
+
 
 });
