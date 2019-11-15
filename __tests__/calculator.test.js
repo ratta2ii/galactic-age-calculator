@@ -20,6 +20,7 @@ describe('Age', () => {
   });
 
 
+
   test('should determine the method correctly calculates, then returns, the correct output (age) of someone living on Venus', () => {
     let newAge = new Age(100);
     expect(newAge.calculateVenus()).toEqual(62);
@@ -30,6 +31,17 @@ describe('Age', () => {
     expect(newAge.calculateVenus()).toEqual(56.42);
   });
 
+
+
+  test('should determine the method correctly calculates, then returns, the correct output (age) of someone living on Mars', () => {
+    let newAge = new Age(100);
+    expect(newAge.calculateMars()).toEqual(188);
+  });
+
+  test('should determine the method correctly calculates, then returns, the correct output (age) of someone living on Mars', () => {
+    let newAge = new Age(99);
+    expect(newAge.calculateMars()).toEqual(186.12);
+  });
 
 
 });
