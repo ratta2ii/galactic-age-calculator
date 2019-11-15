@@ -22,12 +22,12 @@ describe('Age', () => {
 
   test('should determine the method correctly calculates, then returns, the correct output (age) of someone living on Venus', () => {
     let newAge = new Age(100);
-    expect(newAge.calculateMercury()).toEqual(62);
+    expect(newAge.calculateVenus()).toEqual(62);
   });
 
   test('should determine the method correctly calculates, then returns, the correct output (age) of someone living on Venus', () => {
     let newAge = new Age(91);
-    expect(newAge.calculateMercury()).toEqual(56.42);
+    expect(newAge.calculateVenus()).toEqual(56.42);
   });
 
 
