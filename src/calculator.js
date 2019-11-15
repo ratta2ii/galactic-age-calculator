@@ -23,7 +23,7 @@ export class Age {
     let jupiterAge = this.age * 11.86;
     return parseFloat(jupiterAge.toFixed(2));
   }
-  mercurylifeExpectancy() {
+  mercuryLifeExpectancy() {
     const lifeExpectancy = 78.69;
     let mercuryAge = this.calculateMercury();
     if (mercuryAge < lifeExpectancy){
@@ -31,6 +31,26 @@ export class Age {
     }
     if (mercuryAge > lifeExpectancy){
       return `You have lived ${(mercuryAge - 80).toFixed(2)} years longer than average.`;
+    }
+  }
+  venusLifeExpectancy() {
+    const lifeExpectancy = 78.69;
+    let venusAge = this.calculateVenus();
+    if (venusAge < lifeExpectancy){
+      return `You can expect to live ${(80 - venusAge).toFixed(2)} more years.`
+    }
+    if (venusAge > lifeExpectancy){
+      return `You have lived ${(venusAge - 80).toFixed(2)} years longer than average.`;
+    }
+  }
+  marsLifeExpectancy() {
+    const lifeExpectancy = 78.69;
+    let marsAge = this.calculateMars();
+    if (marsAge < lifeExpectancy){
+      return `You can expect to live ${(80 - marsAge).toFixed(2)} more years.`
+    }
+    if (marsAge > lifeExpectancy){
+      return `You have lived ${(marsAge - 80).toFixed(2)} years longer than average.`;
     }
   }
 }
