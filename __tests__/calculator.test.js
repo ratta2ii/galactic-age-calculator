@@ -59,13 +59,27 @@ describe('Age', () => {
 
   test('should determine the mercuryLifeExpectancy method correctly calculates the life expectancy on planet Mercury', () => {
     let newAge = new Age(10);
-    expect(newAge.mercurylifeExpectancy()).toEqual("You can expect to live 77.60 more years.");
+    expect(newAge.mercuryLifeExpectancy()).toEqual("You can expect to live 77.60 more years.");
   });
 
   test('should determine the mercuryLifeExpectancy method correctly calculates the life expectancy on planet Mercury', () => {
     let newAge = new Age(500);
-    expect(newAge.mercurylifeExpectancy()).toEqual("You have lived 40.00 years longer than average.");
+    expect(newAge.mercuryLifeExpectancy()).toEqual("You have lived 40.00 years longer than average.");
   });
+
+
+
+
+
+    test('should determine the venusLifeExpectancy method correctly calculates the life expectancy on planet Venus', () => {
+      let newAge = new Age(55);
+      expect(newAge.venusLifeExpectancy()).toEqual("You can expect to live 45.90 more years.");
+    });
+
+    test('should determine the venusLifeExpectancy method correctly calculates the life expectancy on planet Venus', () => {
+      let newAge = new Age(175);
+      expect(newAge.venusLifeExpectancy()).toEqual("You have lived 28.50 years longer than average.");
+    });
 
 
 
