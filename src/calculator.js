@@ -5,4 +5,8 @@ export class Age {
   constructor(age){
     this.age = age;
   }
+  calculateMercury() {
+    let mercuryAge = this.age * .24;
+    return parseFloat(mercuryAge.toFixed(2));
+  }
 }
