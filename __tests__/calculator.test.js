@@ -15,4 +15,11 @@ describe('Age', () => {
     expect(newAge.calculateMercury()).toEqual(24);
   });
 
+  test('should correctly detrmine that the method correctly calculates the age of someone living on mercury', () => {
+    let newAge = new Age(113);
+    expect(newAge.calculateMercury()).toEqual(27.12);
+  });
+
+  
+
 });
