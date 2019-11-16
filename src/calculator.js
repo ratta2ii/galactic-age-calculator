@@ -1,8 +1,5 @@
 // Business Logic (Import jQuery here if needed)
 
-const earthLifeExpectancy = 78.69;
-
-
 export class Age {
   constructor(age){
     this.age = age;
@@ -47,7 +44,7 @@ export class Age {
     const lifeExpectancy = 78.69;
     let marsAge = this.calculateMars();
     if (marsAge < lifeExpectancy){
-      return `You can expect to live ${(80 - marsAge).toFixed(2)} more years.`
+      return `You can expect to live ${(80 - marsAge).toFixed(2)} more years.`;
     }
     if (marsAge > lifeExpectancy){
       return `You have lived ${(marsAge - 80).toFixed(2)} years longer than average.`;
@@ -57,7 +54,7 @@ export class Age {
     const lifeExpectancy = 78.69;
     let jupiterAge = this.calculateJupiter();
     if (jupiterAge < lifeExpectancy){
-      return `You can expect to live ${(80 - jupiterAge).toFixed(2)} more years.`
+      return `You can expect to live ${(80 - jupiterAge).toFixed(2)} more years.`;
     }
     if (jupiterAge > lifeExpectancy){
       return `You have lived ${(jupiterAge - 80).toFixed(2)} years longer than average.`;
