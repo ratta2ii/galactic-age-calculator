@@ -15,7 +15,7 @@ _This individual project will be strictly back-end with no User Interface. This 
 5.) $ npm run test (to confirm that all 17 tests are passing)
 
 ## Specifications:
-User Enters their current age and the program outputs what users age would be on a different plant.
+User Enters their current age and the program outputs what users age would be on a different planet.
 ##### Example Input: 21
 ##### Output:
 * 5.04 -on Mercury
