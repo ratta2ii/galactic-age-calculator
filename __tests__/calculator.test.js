@@ -8,7 +8,7 @@ describe('Age', () => {
     let newAge = new Age(45);
     expect(newAge.age).toEqual(45);
   });
-  
+
 
   test('should determine the method correctly calculates, then returns, the correct output (age) of someone living on Mercury', () => {
     let newAge = new Age(100);
@@ -52,40 +52,40 @@ describe('Age', () => {
 
   test('should determine the mercuryLifeExpectancy method correctly calculates the life expectancy on planet Mercury', () => {
     let newAge = new Age(10);
-    expect(newAge.mercuryLifeExpectancy()).toEqual("You can expect to live 77.60 more years.");
+    expect(newAge.mercuryLifeExpectancy()).toEqual("You can expect to live 76.29 more years.");
   });
   test('should determine the mercuryLifeExpectancy method correctly calculates the life expectancy on planet Mercury', () => {
     let newAge = new Age(500);
-    expect(newAge.mercuryLifeExpectancy()).toEqual("You have lived 40.00 years longer than average.");
+    expect(newAge.mercuryLifeExpectancy()).toEqual("You have lived 41.31 years longer than average.");
   });
 
 
   test('should determine the venusLifeExpectancy method correctly calculates the life expectancy on planet Venus', () => {
     let newAge = new Age(55);
-    expect(newAge.venusLifeExpectancy()).toEqual("You can expect to live 45.90 more years.");
+    expect(newAge.venusLifeExpectancy()).toEqual("You can expect to live 44.59 more years.");
   });
   test('should determine the venusLifeExpectancy method correctly calculates the life expectancy on planet Venus', () => {
     let newAge = new Age(175);
-    expect(newAge.venusLifeExpectancy()).toEqual("You have lived 28.50 years longer than average.");
+    expect(newAge.venusLifeExpectancy()).toEqual("You have lived 29.81 years longer than average.");
   });
 
 
   test('should determine the marsLifeExpectancy method correctly calculates the life expectancy on planet Mars', () => {
     let newAge = new Age(5);
-    expect(newAge.marsLifeExpectancy()).toEqual("You can expect to live 70.60 more years.");
+    expect(newAge.marsLifeExpectancy()).toEqual("You can expect to live 69.29 more years.");
   });
   test('should determine the marsLifeExpectancy method correctly calculates the life expectancy on planet Mars', () => {
     let newAge = new Age(45);
-    expect(newAge.marsLifeExpectancy()).toEqual("You have lived 4.60 years longer than average.");
+    expect(newAge.marsLifeExpectancy()).toEqual("You have lived 5.91 years longer than average.");
   });
 
 
   test('should determine the jupiterLifeExpectancy method correctly calculates the life expectancy on planet Jupiter', () => {
     let newAge = new Age(6);
-    expect(newAge.jupiterLifeExpectancy()).toEqual("You can expect to live 8.84 more years.");
+    expect(newAge.jupiterLifeExpectancy()).toEqual("You can expect to live 7.53 more years.");
   });
   test('should determine the jupiterLifeExpectancy method correctly calculates the life expectancy on planet Jupiter', () => {
     let newAge = new Age(21);
-    expect(newAge.jupiterLifeExpectancy()).toEqual("You have lived 169.06 years longer than average.");
+    expect(newAge.jupiterLifeExpectancy()).toEqual("You have lived 170.37 years longer than average.");
   });
 });
